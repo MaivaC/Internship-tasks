@@ -8,15 +8,36 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="toggle">
+    <div class="toggle"> <!--To change the interface to either light or dark mode-->
         <input type="checkbox" id="check">
     <label for="check" class="button"></label>
 
     <h1>Weather Dashboard</h1>
     </div>
+<div class="container">
     
- 
+    <div class="weather-input">
+    <h3>Enter a City Name</h3>
+    <input type="text" placeholder="e.g Buea, Limbe, Douala">
+    <button class="search-btn">Search</button>
+    <div class="separator"></div>
+    <button class="location-btn">Use current location</button>
+    </div>
+    <div class="weather-data">
+        <div class="current-weather">
+            <div class="details">
+                <h2>Buea (29-08-2024)</h2>
+                <h4>Temperature: 24°C</h4>
+                <h4>Wind: 6km/h</h4>
+                <h4>Humidity: 96%</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn3.iconfinder.com/data/icons/sunnyday-2/142/light_cloudy_heavy_rain-512.png" alt="weather-icon">
+                <h4>Moderate Rain</h4>
+            </div>
+        </div>
+    </div>
+    
 </div>
 </body>
 <script>
