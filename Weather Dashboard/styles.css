@@ -97,10 +97,7 @@ input:checked + .button{
         .weather-input .separator::before{
             content: "OR";
            
-            
-
-
-        }
+            }
 
         .weather-input .location-btn{
 
@@ -114,9 +111,54 @@ input:checked + .button{
         }
         .current-weather{
             
-            background-color: var(--background-color);
+            background: var(--background-color);
+           color:#fff;
+          padding: 20px 70px 20px 20px;
+          justify-content: space-between;
+          border-radius: 10px;
+          display:flex;
            
-            width: 300px;
-            height:40vh;
+        }
+        .current-weather h2{
+            font-size: 1.5rem;
+
+        }
+        .current-weather h4{
+            margin-top: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .current-weather .icon img{
+            max-width: 120px;
+            margin-top: -10px;
+        }
+        .current-weather .icon h4{
+           text-transform: capitalize;
+           margin-top: -10px;
+
+        }
+
+        .day-forecast h2{
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .weather-cards{
+            gap: 15px;
+            display: flex;
           
         }
+    .weather-cards .cards{
+        list-style: none;
+        color: #fff;
+        background-color: #494343;
+        padding: 18px 16px ;
+        border-radius: 5px;
+        width: calc(100%/5);
+
+    }
+
+    .weather-cards .cards img{
+        max-width: 70px;
+        margin: 5px 0 -12px 0;
+    }
