@@ -126,7 +126,11 @@ input:checked + .button{
         .current-weather h4{
             margin-top: 12px;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 300;
+            
+        }
+        .current-weather .icon{
+            text-align: center;
         }
         .current-weather .icon img{
             max-width: 120px;
@@ -160,5 +164,49 @@ input:checked + .button{
 
     .weather-cards .cards img{
         max-width: 70px;
-        margin: 5px 0 -12px 0;
+        margin: 5px 0 5px 0;
+    }
+
+    li{
+    line-height: 1.5em;
+    }
+
+    @media(max-width:1400px){
+        .weather-data .current-weather{
+            padding:20px;
+        }
+
+        .weather-cards{
+            flex-wrap:wrap;
+        }
+        .weather-cards .card{
+            width:calc(200%/4-15px);
+        }
+
+    }
+    @medai(max-width:1200px){
+        .weather-cards .cards{
+            width:calc(100%/3-15px);
+        }
+    }
+
+    @medai(max-width:950px){
+        .weather-input{
+            width:450px;
+        }
+        .weather-cards .cards{
+            width:calc(100%/2 - 10px);
+        }
+    }
+    @media(max-width: 750px){
+        .container{
+            flex-wrap:wrap;
+            padding: 15px;
+        }
+
+        .weather-input{
+            width:100%;
+
+        }
+
     }
