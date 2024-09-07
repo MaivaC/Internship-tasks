@@ -184,13 +184,13 @@ input:checked + .button{
         }
 
     }
-    @medai(max-width:1200px){
+    @media(max-width:1200px){
         .weather-cards .cards{
             width:calc(100%/3-15px);
         }
     }
 
-    @medai(max-width:950px){
+    @media(max-width:950px){
         .weather-input{
             width:450px;
         }
